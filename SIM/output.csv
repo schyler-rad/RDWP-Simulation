@@ -1,0 +1,586 @@
+
+Call:
+lm(formula = dxsxbar.visits ~ metadata.target_market_size + metadata.r + 
+    metadata.s + metadata.u + metadata.nm + metadata.rationality + 
+    metadata.visit_change + metadata.playground + metadata.tutoring + 
+    metadata.coworking + metadata.cafe + metadata.party + metadata.workshop + 
+    metadata.camp + metadata.merchandise + metadata.r.membership_cost + 
+    metadata.r.playground_credits + metadata.r.tutoring_credits + 
+    metadata.r.cowowrking_credits + metadata.r.cafe_credits + 
+    metadata.r.party_credits + metadata.r.workshop_credits + 
+    metadata.r.camp_credits + metadata.r.merchandise_credits + 
+    metadata.s.membership_cost + metadata.s.playground_credits + 
+    metadata.s.tutoring_credits + metadata.s.cowowrking_credits + 
+    metadata.s.cafe_credits + metadata.s.party_credits + metadata.s.workshop_credits + 
+    metadata.s.camp_credits + metadata.s.merchandise_credits + 
+    metadata.u.membership_cost + metadata.u.playground_credits + 
+    metadata.u.tutoring_credits + metadata.u.cowowrking_credits + 
+    metadata.u.cafe_credits + metadata.u.party_credits + metadata.u.workshop_credits + 
+    metadata.u.camp_credits + metadata.u.merchandise_credits + 
+    dxsxbar.visit_prob + dxsxbar.playground_lambda + dxsxbar.tutoring_lambda + 
+    dxsxbar.coworking_lambda + dxsxbar.cafe_lambda + dxsxbar.party_lambda + 
+    dxsxbar.workshop_lambda + dxsxbar.camp_lambda + dxsxbar.merchandise_lambda + 
+    dxsxbar.spent + dxsxbar.playground_credits + dxsxbar.tutoring_credits + 
+    dxsxbar.coworking_credits + dxsxbar.cafe_credits + dxsxbar.party_credits + 
+    dxsxbar.workshop_credits + dxsxbar.camp_credits + dxsxbar.merchandise_credits + 
+    dxsxbar.savings + dxssd.visit_prob + dxssd.playground_lambda + 
+    dxssd.tutoring_lambda + dxssd.coworking_lambda + dxssd.cafe_lambda + 
+    dxssd.party_lambda + dxssd.workshop_lambda + dxssd.camp_lambda + 
+    dxssd.merchandise_lambda + dxssd.spent + dxssd.playground_credits + 
+    dxssd.tutoring_credits + dxssd.coworking_credits + dxssd.cafe_credits + 
+    dxssd.party_credits + dxssd.workshop_credits + dxssd.camp_credits + 
+    dxssd.merchandise_credits + dxssd.savings + dxssd.r + dxssd.s + 
+    dxssd.u + dxssd.nm + dxsk.visit_prob + dxsk.visits + dxsk.playground_lambda + 
+    dxsk.tutoring_lambda + dxsk.coworking_lambda + dxsk.cafe_lambda + 
+    dxsk.party_lambda + dxsk.workshop_lambda + dxsk.camp_lambda + 
+    dxsk.merchandise_lambda + dxsk.spent + dxsk.playground_credits + 
+    dxsk.tutoring_credits + dxsk.coworking_credits + dxsk.cafe_credits + 
+    dxsk.party_credits + dxsk.workshop_credits + dxsk.camp_credits + 
+    dxsk.merchandise_credits + dxsk.savings + dxsk.r + dxsk.s + 
+    dxsk.u + dxsk.nm + dxssk.visit_prob + dxssk.visits + dxssk.playground_lambda + 
+    dxssk.tutoring_lambda + dxssk.coworking_lambda + dxssk.cafe_lambda + 
+    dxssk.party_lambda + dxssk.workshop_lambda + dxssk.camp_lambda + 
+    dxssk.merchandise_lambda + dxssk.spent + dxssk.playground_credits + 
+    dxssk.tutoring_credits + dxssk.coworking_credits + dxssk.cafe_credits + 
+    dxssk.party_credits + dxssk.workshop_credits + dxssk.camp_credits + 
+    dxssk.merchandise_credits + dxssk.r + dxssk.s + dxssk.u + 
+    dxssk.nm, data = my_results_sims)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.066854 -0.018432 -0.000723  0.020874  0.065185 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -1.487e+01  2.126e+01  -0.699 0.486835    
+metadata.target_market_size     4.252e-06  3.067e-06   1.387 0.170055    
+metadata.r                     -7.836e-03  2.160e-02  -0.363 0.717877    
+metadata.s                      5.619e-02  2.376e-02   2.365 0.020895 *  
+metadata.u                     -2.517e-02  2.183e-02  -1.153 0.252882    
+metadata.nm                     1.918e-04  4.406e-02   0.004 0.996539    
+metadata.rationality           -9.536e-03  1.299e-02  -0.734 0.465421    
+metadata.visit_change          -8.776e-01  5.469e-01  -1.605 0.113214    
+metadata.playground             2.898e-02  4.858e-03   5.965 9.80e-08 ***
+metadata.tutoring               6.328e-03  1.137e-03   5.566 4.78e-07 ***
+metadata.coworking              2.939e-02  4.885e-03   6.016 7.98e-08 ***
+metadata.cafe                   2.059e-03  2.316e-03   0.889 0.377152    
+metadata.party                  4.313e-05  5.428e-05   0.795 0.429639    
+metadata.workshop              -5.167e-04  4.358e-04  -1.186 0.239900    
+metadata.camp                   3.084e-05  4.319e-05   0.714 0.477563    
+metadata.merchandise            3.239e-04  4.080e-04   0.794 0.430005    
+metadata.r.membership_cost     -6.132e-06  3.185e-06  -1.925 0.058387 .  
+metadata.r.playground_credits   9.656e-05  1.164e-04   0.830 0.409604    
+metadata.r.tutoring_credits    -3.578e-04  1.029e-03  -0.348 0.729111    
+metadata.r.cowowrking_credits   4.578e-05  1.384e-04   0.331 0.741901    
+metadata.r.cafe_credits        -1.395e-04  1.644e-04  -0.849 0.399037    
+metadata.r.party_credits       -4.743e-02  3.675e-02  -1.291 0.201182    
+metadata.r.workshop_credits     1.744e-02  1.242e-02   1.404 0.164727    
+metadata.r.camp_credits         3.011e-03  9.268e-03   0.325 0.746294    
+metadata.r.merchandise_credits  4.059e-02  2.952e-02   1.375 0.173661    
+metadata.s.membership_cost      5.540e-06  2.947e-06   1.880 0.064439 .  
+metadata.s.playground_credits  -1.171e-04  9.959e-05  -1.176 0.243670    
+metadata.s.tutoring_credits     1.454e-03  1.752e-03   0.830 0.409419    
+metadata.s.cowowrking_credits   2.020e-05  4.623e-04   0.044 0.965276    
+metadata.s.cafe_credits        -4.591e-05  2.177e-04  -0.211 0.833655    
+metadata.s.party_credits        8.205e-03  1.691e-02   0.485 0.629046    
+metadata.s.workshop_credits    -1.572e-02  1.534e-02  -1.025 0.308946    
+metadata.s.camp_credits        -1.622e-02  1.270e-02  -1.277 0.206026    
+metadata.s.merchandise_credits  6.378e-03  1.815e-02   0.351 0.726310    
+metadata.u.membership_cost      1.852e-05  7.747e-06   2.391 0.019572 *  
+metadata.u.playground_credits   9.284e-04  5.969e-04   1.555 0.124485    
+metadata.u.tutoring_credits     1.200e-03  1.195e-03   1.004 0.318767    
+metadata.u.cowowrking_credits   5.562e-05  6.103e-04   0.091 0.927647    
+metadata.u.cafe_credits         7.361e-04  4.317e-04   1.705 0.092748 .  
+metadata.u.party_credits        3.311e-03  1.739e-02   0.190 0.849523    
+metadata.u.workshop_credits     1.228e-02  1.543e-02   0.796 0.429082    
+metadata.u.camp_credits        -1.784e-02  7.779e-03  -2.293 0.024946 *  
+metadata.u.merchandise_credits  1.890e-02  1.687e-02   1.120 0.266598    
+dxsxbar.visit_prob              4.050e+00  3.888e+00   1.042 0.301221    
+dxsxbar.playground_lambda      -4.761e-02  5.097e-01  -0.093 0.925865    
+dxsxbar.tutoring_lambda         1.888e+00  2.780e+00   0.679 0.499344    
+dxsxbar.coworking_lambda       -1.912e+00  4.409e-01  -4.337 4.90e-05 ***
+dxsxbar.cafe_lambda             1.473e+00  2.326e+00   0.633 0.528715    
+dxsxbar.party_lambda           -3.568e+03  2.123e+03  -1.681 0.097443 .  
+dxsxbar.workshop_lambda         1.824e+03  2.306e+03   0.791 0.431679    
+dxsxbar.camp_lambda            -1.538e+03  1.866e+03  -0.824 0.412717    
+dxsxbar.merchandise_lambda      1.461e+03  1.820e+03   0.803 0.424904    
+dxsxbar.spent                   3.871e-06  1.297e-05   0.298 0.766323    
+dxsxbar.playground_credits      1.289e-03  5.306e-04   2.430 0.017741 *  
+dxsxbar.tutoring_credits        7.685e-03  6.752e-03   1.138 0.259038    
+dxsxbar.coworking_credits      -5.246e-04  5.513e-04  -0.952 0.344686    
+dxsxbar.cafe_credits           -9.652e-04  7.061e-04  -1.367 0.176094    
+dxsxbar.party_credits           2.016e-01  1.250e-01   1.613 0.111466    
+dxsxbar.workshop_credits       -1.707e-02  5.927e-02  -0.288 0.774216    
+dxsxbar.camp_credits            5.294e-02  4.133e-02   1.281 0.204586    
+dxsxbar.merchandise_credits     2.783e-03  8.290e-02   0.034 0.973323    
+dxsxbar.savings                 9.050e-03  8.697e-04  10.406 1.05e-15 ***
+dxssd.visit_prob                2.183e+01  9.253e+00   2.359 0.021198 *  
+dxssd.playground_lambda         2.825e-01  1.130e+00   0.250 0.803330    
+dxssd.tutoring_lambda           1.277e+00  5.768e+00   0.221 0.825408    
+dxssd.coworking_lambda         -6.613e-01  1.165e+00  -0.568 0.572066    
+dxssd.cafe_lambda               8.692e+00  4.936e+00   1.761 0.082720 .  
+dxssd.party_lambda              1.112e+04  4.101e+03   2.711 0.008487 ** 
+dxssd.workshop_lambda          -3.974e+03  4.275e+03  -0.930 0.355819    
+dxssd.camp_lambda               1.035e+03  4.339e+03   0.238 0.812220    
+dxssd.merchandise_lambda       -3.103e+03  3.830e+03  -0.810 0.420619    
+dxssd.spent                     1.578e-05  1.440e-05   1.096 0.276902    
+dxssd.playground_credits       -8.213e-04  4.943e-04  -1.662 0.101191    
+dxssd.tutoring_credits         -8.380e-03  6.537e-03  -1.282 0.204210    
+dxssd.coworking_credits         5.502e-05  6.171e-04   0.089 0.929217    
+dxssd.cafe_credits              8.842e-04  7.880e-04   1.122 0.265790    
+dxssd.party_credits            -4.733e-02  1.569e-01  -0.302 0.763842    
+dxssd.workshop_credits         -3.755e-02  6.094e-02  -0.616 0.539879    
+dxssd.camp_credits             -1.588e-02  4.309e-02  -0.369 0.713599    
+dxssd.merchandise_credits      -1.512e-01  1.162e-01  -1.302 0.197475    
+dxssd.savings                  -1.828e-02  1.947e-03  -9.388 6.75e-14 ***
+dxssd.r                        -3.595e-01  2.213e-01  -1.625 0.108781    
+dxssd.s                         5.006e-01  2.196e-01   2.279 0.025808 *  
+dxssd.u                        -1.521e-01  2.215e-01  -0.687 0.494507    
+dxssd.nm                        1.379e-01  1.393e-01   0.990 0.325799    
+dxsk.visit_prob                 1.559e+00  8.396e-01   1.857 0.067699 .  
+dxsk.visits                     1.602e-01  3.174e-02   5.046 3.59e-06 ***
+dxsk.playground_lambda         -3.023e-01  1.148e+00  -0.263 0.793046    
+dxsk.tutoring_lambda            4.933e-01  1.182e+00   0.417 0.677661    
+dxsk.coworking_lambda           3.278e-01  1.302e+00   0.252 0.802038    
+dxsk.cafe_lambda                1.330e+00  1.186e+00   1.121 0.266026    
+dxsk.party_lambda               3.046e+00  1.297e+00   2.348 0.021775 *  
+dxsk.workshop_lambda           -1.225e+00  1.413e+00  -0.867 0.388962    
+dxsk.camp_lambda                1.624e+00  1.503e+00   1.081 0.283582    
+dxsk.merchandise_lambda        -1.752e+00  1.106e+00  -1.585 0.117695    
+dxsk.spent                     -8.434e-03  4.363e-03  -1.933 0.057370 .  
+dxsk.playground_credits        -4.956e-03  4.216e-02  -0.118 0.906764    
+dxsk.tutoring_credits           3.320e-03  1.579e-03   2.102 0.039253 *  
+dxsk.coworking_credits          1.347e-02  4.120e-02   0.327 0.744798    
+dxsk.cafe_credits              -8.674e-03  7.274e-03  -1.192 0.237226    
+dxsk.party_credits             -1.639e-02  5.537e-03  -2.959 0.004241 ** 
+dxsk.workshop_credits           6.296e-03  3.364e-03   1.872 0.065549 .  
+dxsk.camp_credits              -2.394e-03  4.244e-03  -0.564 0.574604    
+dxsk.merchandise_credits        2.242e-03  4.257e-03   0.527 0.600080    
+dxsk.savings                    5.002e-03  8.010e-03   0.624 0.534436    
+dxsk.r                          8.419e-03  1.198e-02   0.703 0.484745    
+dxsk.s                          1.575e-02  8.310e-03   1.895 0.062378 .  
+dxsk.u                         -9.236e-03  1.305e-02  -0.708 0.481650    
+dxsk.nm                         1.965e-03  4.442e-03   0.442 0.659688    
+dxssk.visit_prob               -5.796e-01  8.078e-01  -0.718 0.475501    
+dxssk.visits                   -1.153e+00  1.833e-01  -6.290 2.63e-08 ***
+dxssk.playground_lambda        -1.118e+00  1.102e+00  -1.015 0.313593    
+dxssk.tutoring_lambda           3.377e-01  1.122e+00   0.301 0.764304    
+dxssk.coworking_lambda         -3.614e+00  9.288e-01  -3.891 0.000230 ***
+dxssk.cafe_lambda               1.845e+00  9.644e-01   1.913 0.059953 .  
+dxssk.party_lambda             -1.760e+00  1.056e+00  -1.667 0.100141    
+dxssk.workshop_lambda           7.688e-01  1.223e+00   0.628 0.531819    
+dxssk.camp_lambda               6.097e-01  1.106e+00   0.551 0.583193    
+dxssk.merchandise_lambda        2.448e-01  1.036e+00   0.236 0.813951    
+dxssk.spent                     1.103e-01  3.423e-02   3.224 0.001946 ** 
+dxssk.playground_credits        3.631e-02  3.748e-01   0.097 0.923125    
+dxssk.tutoring_credits         -4.461e-02  2.479e-02  -1.799 0.076433 .  
+dxssk.coworking_credits        -1.583e-01  3.691e-01  -0.429 0.669302    
+dxssk.cafe_credits              6.396e-02  4.090e-02   1.564 0.122545    
+dxssk.party_credits             9.731e-02  3.404e-02   2.859 0.005638 ** 
+dxssk.workshop_credits         -7.673e-02  3.176e-02  -2.416 0.018377 *  
+dxssk.camp_credits              6.473e-03  3.400e-02   0.190 0.849573    
+dxssk.merchandise_credits      -1.730e-02  2.834e-02  -0.611 0.543518    
+dxssk.r                         8.520e-02  2.435e-02   3.500 0.000827 ***
+dxssk.s                        -1.008e-02  1.394e-02  -0.723 0.472089    
+dxssk.u                        -2.445e-02  2.357e-02  -1.037 0.303252    
+dxssk.nm                       -6.818e-03  2.226e-02  -0.306 0.760322    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.04727 on 68 degrees of freedom
+Multiple R-squared:  0.9948,	Adjusted R-squared:  0.9848 
+F-statistic: 99.22 on 131 and 68 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = dxsxbar.spent ~ metadata.target_market_size + metadata.r + 
+    metadata.s + metadata.u + metadata.nm + metadata.rationality + 
+    metadata.visit_change + metadata.mean_daily_visitors + metadata.playground + 
+    metadata.tutoring + metadata.coworking + metadata.cafe + 
+    metadata.party + metadata.workshop + metadata.camp + metadata.merchandise + 
+    metadata.r.membership_cost + metadata.r.playground_credits + 
+    metadata.r.tutoring_credits + metadata.r.cowowrking_credits + 
+    metadata.r.cafe_credits + metadata.r.party_credits + metadata.r.workshop_credits + 
+    metadata.r.camp_credits + metadata.r.merchandise_credits + 
+    metadata.s.membership_cost + metadata.s.playground_credits + 
+    metadata.s.tutoring_credits + metadata.s.cowowrking_credits + 
+    metadata.s.cafe_credits + metadata.s.party_credits + metadata.s.workshop_credits + 
+    metadata.s.camp_credits + metadata.s.merchandise_credits + 
+    metadata.u.membership_cost + metadata.u.playground_credits + 
+    metadata.u.tutoring_credits + metadata.u.cowowrking_credits + 
+    metadata.u.cafe_credits + metadata.u.party_credits + metadata.u.workshop_credits + 
+    metadata.u.camp_credits + metadata.u.merchandise_credits + 
+    dxsxbar.visit_prob + dxsxbar.visits + dxsxbar.playground_lambda + 
+    dxsxbar.tutoring_lambda + dxsxbar.coworking_lambda + dxsxbar.cafe_lambda + 
+    dxsxbar.party_lambda + dxsxbar.workshop_lambda + dxsxbar.camp_lambda + 
+    dxsxbar.merchandise_lambda + dxsxbar.playground_credits + 
+    dxsxbar.tutoring_credits + dxsxbar.coworking_credits + dxsxbar.cafe_credits + 
+    dxsxbar.party_credits + dxsxbar.workshop_credits + dxsxbar.camp_credits + 
+    dxsxbar.merchandise_credits + dxsxbar.savings + dxssd.visit_prob + 
+    dxssd.visits + dxssd.playground_lambda + dxssd.tutoring_lambda + 
+    dxssd.coworking_lambda + dxssd.cafe_lambda + dxssd.party_lambda + 
+    dxssd.workshop_lambda + dxssd.camp_lambda + dxssd.merchandise_lambda + 
+    dxssd.spent + dxssd.playground_credits + dxssd.tutoring_credits + 
+    dxssd.coworking_credits + dxssd.cafe_credits + dxssd.party_credits + 
+    dxssd.workshop_credits + dxssd.camp_credits + dxssd.merchandise_credits + 
+    dxssd.savings + dxssd.r + dxssd.s + dxssd.u + dxssd.nm + 
+    dxsk.visit_prob + dxsk.visits + dxsk.playground_lambda + 
+    dxsk.tutoring_lambda + dxsk.coworking_lambda + dxsk.cafe_lambda + 
+    dxsk.party_lambda + dxsk.workshop_lambda + dxsk.camp_lambda + 
+    dxsk.merchandise_lambda + dxsk.spent + dxsk.playground_credits + 
+    dxsk.tutoring_credits + dxsk.coworking_credits + dxsk.cafe_credits + 
+    dxsk.party_credits + dxsk.workshop_credits + dxsk.camp_credits + 
+    dxsk.merchandise_credits + dxsk.savings + dxsk.r + dxsk.s + 
+    dxsk.u + dxsk.nm + dxssk.visit_prob + dxssk.visits + dxssk.playground_lambda + 
+    dxssk.tutoring_lambda + dxssk.coworking_lambda + dxssk.cafe_lambda + 
+    dxssk.party_lambda + dxssk.workshop_lambda + dxssk.camp_lambda + 
+    dxssk.merchandise_lambda + dxssk.spent + dxssk.playground_credits + 
+    dxssk.tutoring_credits + dxssk.coworking_credits + dxssk.cafe_credits + 
+    dxssk.party_credits + dxssk.workshop_credits + dxssk.camp_credits + 
+    dxssk.merchandise_credits + dxssk.savings + dxssk.r + dxssk.s + 
+    dxssk.u + dxssk.nm, data = my_results_sims)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-569.97 -177.98    4.32  158.44  735.89 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -3.400e+05  2.059e+05  -1.651 0.103502    
+metadata.target_market_size    -5.576e-02  5.763e-02  -0.968 0.336872    
+metadata.r                     -6.881e+01  2.126e+02  -0.324 0.747183    
+metadata.s                      4.884e+02  2.367e+02   2.064 0.043044 *  
+metadata.u                      3.290e+02  2.071e+02   1.589 0.116997    
+metadata.nm                     3.373e+02  4.185e+02   0.806 0.423177    
+metadata.rationality           -9.503e+01  1.257e+02  -0.756 0.452252    
+metadata.visit_change          -4.756e+03  5.458e+03  -0.871 0.386735    
+metadata.mean_daily_visitors    1.556e+01  2.446e+01   0.636 0.526998    
+metadata.playground            -8.223e+00  8.350e+01  -0.098 0.921855    
+metadata.tutoring              -5.677e+00  1.773e+01  -0.320 0.749884    
+metadata.coworking              5.006e-01  8.213e+01   0.006 0.995155    
+metadata.cafe                   1.757e+01  2.672e+01   0.658 0.513140    
+metadata.party                  3.083e-01  5.345e-01   0.577 0.565994    
+metadata.workshop              -1.423e+00  4.275e+00  -0.333 0.740347    
+metadata.camp                   5.231e-01  4.188e-01   1.249 0.216172    
+metadata.merchandise            8.864e-01  3.949e+00   0.224 0.823115    
+metadata.r.membership_cost     -1.684e-01  2.497e-02  -6.744 4.91e-09 ***
+metadata.r.playground_credits   8.897e-01  1.159e+00   0.768 0.445499    
+metadata.r.tutoring_credits    -4.384e+00  9.948e+00  -0.441 0.660888    
+metadata.r.cowowrking_credits  -1.240e+00  1.328e+00  -0.934 0.353966    
+metadata.r.cafe_credits         2.658e+00  1.548e+00   1.716 0.090877 .  
+metadata.r.party_credits       -1.980e+02  3.595e+02  -0.551 0.583728    
+metadata.r.workshop_credits    -1.486e+02  1.209e+02  -1.229 0.223499    
+metadata.r.camp_credits         6.981e+01  8.919e+01   0.783 0.436637    
+metadata.r.merchandise_credits  3.690e+02  2.870e+02   1.286 0.203104    
+metadata.s.membership_cost      1.034e-01  2.638e-02   3.919 0.000216 ***
+metadata.s.playground_credits  -1.505e+00  9.596e-01  -1.568 0.121684    
+metadata.s.tutoring_credits     8.900e+00  1.688e+01   0.527 0.599767    
+metadata.s.cowowrking_credits  -4.045e+00  4.405e+00  -0.918 0.361862    
+metadata.s.cafe_credits         9.036e-01  2.084e+00   0.434 0.666025    
+metadata.s.party_credits        2.537e+02  1.610e+02   1.576 0.119968    
+metadata.s.workshop_credits     3.957e+01  1.487e+02   0.266 0.790995    
+metadata.s.camp_credits         4.598e+01  1.272e+02   0.361 0.719017    
+metadata.s.merchandise_credits -5.431e+01  1.768e+02  -0.307 0.759719    
+metadata.u.membership_cost      1.720e-01  7.397e-02   2.326 0.023166 *  
+metadata.u.playground_credits   2.856e+00  5.852e+00   0.488 0.627216    
+metadata.u.tutoring_credits    -4.138e+00  1.166e+01  -0.355 0.723817    
+metadata.u.cowowrking_credits   4.012e+00  5.987e+00   0.670 0.505215    
+metadata.u.cafe_credits        -2.321e+00  4.234e+00  -0.548 0.585516    
+metadata.u.party_credits        2.189e+02  1.661e+02   1.318 0.192228    
+metadata.u.workshop_credits     2.351e+01  1.482e+02   0.159 0.874427    
+metadata.u.camp_credits        -5.440e+01  7.784e+01  -0.699 0.487109    
+metadata.u.merchandise_credits -1.014e+02  1.660e+02  -0.611 0.543167    
+dxsxbar.visit_prob              3.483e+04  4.065e+04   0.857 0.394740    
+dxsxbar.visits                 -2.446e+03  5.401e+03  -0.453 0.652095    
+dxsxbar.playground_lambda       5.543e+03  4.854e+03   1.142 0.257662    
+dxsxbar.tutoring_lambda         3.854e+04  2.643e+04   1.458 0.149562    
+dxsxbar.coworking_lambda        1.609e+03  4.809e+03   0.334 0.739084    
+dxsxbar.cafe_lambda            -1.148e+02  2.243e+04  -0.005 0.995931    
+dxsxbar.party_lambda           -9.570e+06  2.065e+07  -0.464 0.644535    
+dxsxbar.workshop_lambda         4.256e+07  2.145e+07   1.985 0.051414 .  
+dxsxbar.camp_lambda             2.463e+07  1.775e+07   1.388 0.169962    
+dxsxbar.merchandise_lambda      2.370e+07  1.827e+07   1.298 0.198997    
+dxsxbar.playground_credits      1.049e+01  5.252e+00   1.998 0.049932 *  
+dxsxbar.tutoring_credits       -1.040e+02  6.391e+01  -1.627 0.108556    
+dxsxbar.coworking_credits      -4.765e+00  5.444e+00  -0.875 0.384695    
+dxsxbar.cafe_credits            1.199e+01  6.721e+00   1.785 0.079001 .  
+dxsxbar.party_credits          -5.872e+01  1.274e+03  -0.046 0.963389    
+dxsxbar.workshop_credits       -3.252e+02  5.799e+02  -0.561 0.576867    
+dxsxbar.camp_credits           -2.770e+02  3.968e+02  -0.698 0.487683    
+dxsxbar.merchandise_credits     1.048e+03  7.982e+02   1.313 0.193952    
+dxsxbar.savings                -5.762e+00  1.793e+01  -0.321 0.749009    
+dxssd.visit_prob               -4.092e+04  9.335e+04  -0.438 0.662589    
+dxssd.visits                    2.656e+03  7.270e+03   0.365 0.716108    
+dxssd.playground_lambda        -6.287e+03  1.100e+04  -0.571 0.569772    
+dxssd.tutoring_lambda          -7.515e+04  5.422e+04  -1.386 0.170443    
+dxssd.coworking_lambda          9.224e+03  1.153e+04   0.800 0.426628    
+dxssd.cafe_lambda              -1.562e+03  4.950e+04  -0.032 0.974929    
+dxssd.party_lambda              4.869e+07  4.135e+07   1.177 0.243337    
+dxssd.workshop_lambda           1.689e+07  4.156e+07   0.406 0.685882    
+dxssd.camp_lambda               6.960e+07  4.070e+07   1.710 0.091977 .  
+dxssd.merchandise_lambda        4.105e+06  3.709e+07   0.111 0.912229    
+dxssd.spent                     9.903e-01  6.926e-02  14.300  < 2e-16 ***
+dxssd.playground_credits       -7.149e+00  4.982e+00  -1.435 0.156054    
+dxssd.tutoring_credits          6.972e+01  6.294e+01   1.108 0.272043    
+dxssd.coworking_credits         4.244e+00  5.964e+00   0.712 0.479254    
+dxssd.cafe_credits             -1.349e+01  7.442e+00  -1.812 0.074532 .  
+dxssd.party_credits             5.339e+02  1.546e+03   0.345 0.730985    
+dxssd.workshop_credits          6.185e+02  5.934e+02   1.042 0.301171    
+dxssd.camp_credits             -3.223e+01  4.173e+02  -0.077 0.938669    
+dxssd.merchandise_credits      -1.797e+03  1.111e+03  -1.617 0.110641    
+dxssd.savings                   2.572e+00  4.099e+01   0.063 0.950153    
+dxssd.r                        -2.430e+02  2.253e+03  -0.108 0.914450    
+dxssd.s                         9.033e+02  2.181e+03   0.414 0.680152    
+dxssd.u                        -1.656e+03  2.122e+03  -0.780 0.437980    
+dxssd.nm                       -6.838e+02  1.369e+03  -0.499 0.619217    
+dxsk.visit_prob                -3.683e+03  8.383e+03  -0.439 0.661871    
+dxsk.visits                     5.520e+02  4.194e+02   1.316 0.192767    
+dxsk.playground_lambda         -5.711e+03  1.111e+04  -0.514 0.608825    
+dxsk.tutoring_lambda           -1.250e+04  1.123e+04  -1.113 0.269807    
+dxsk.coworking_lambda           8.500e+03  1.304e+04   0.652 0.516976    
+dxsk.cafe_lambda                6.606e+01  1.163e+04   0.006 0.995484    
+dxsk.party_lambda               1.598e+04  1.322e+04   1.210 0.230833    
+dxsk.workshop_lambda            1.285e+04  1.355e+04   0.948 0.346517    
+dxsk.camp_lambda                2.285e+04  1.440e+04   1.587 0.117369    
+dxsk.merchandise_lambda         5.711e+03  1.070e+04   0.534 0.595479    
+dxsk.spent                      1.245e+02  4.034e+01   3.086 0.002982 ** 
+dxsk.playground_credits        -3.355e+02  4.207e+02  -0.797 0.428120    
+dxsk.tutoring_credits           7.767e+00  1.559e+01   0.498 0.619923    
+dxsk.coworking_credits          3.563e+02  4.131e+02   0.862 0.391589    
+dxsk.cafe_credits              -1.412e+02  6.998e+01  -2.017 0.047808 *  
+dxsk.party_credits             -2.383e+01  5.808e+01  -0.410 0.683004    
+dxsk.workshop_credits          -9.824e+00  3.373e+01  -0.291 0.771760    
+dxsk.camp_credits               4.543e+01  4.145e+01   1.096 0.277078    
+dxsk.merchandise_credits       -2.421e+01  4.102e+01  -0.590 0.557099    
+dxsk.savings                   -6.573e+01  1.637e+02  -0.402 0.689297    
+dxsk.r                          4.782e-01  1.192e+02   0.004 0.996813    
+dxsk.s                          2.961e+01  8.401e+01   0.352 0.725640    
+dxsk.u                         -2.417e+02  1.216e+02  -1.988 0.051060 .  
+dxsk.nm                        -4.358e+01  4.271e+01  -1.020 0.311300    
+dxssk.visit_prob                7.991e+02  8.190e+03   0.098 0.922578    
+dxssk.visits                   -2.833e+03  3.235e+03  -0.876 0.384495    
+dxssk.playground_lambda         1.230e+04  1.076e+04   1.144 0.257018    
+dxssk.tutoring_lambda           1.859e+04  1.063e+04   1.750 0.084876 .  
+dxssk.coworking_lambda         -2.969e+02  9.906e+03  -0.030 0.976180    
+dxssk.cafe_lambda               7.312e+02  9.483e+03   0.077 0.938776    
+dxssk.party_lambda             -1.160e+04  1.017e+04  -1.141 0.258087    
+dxssk.workshop_lambda           2.177e+04  1.142e+04   1.907 0.060992 .  
+dxssk.camp_lambda               1.496e+04  1.054e+04   1.420 0.160429    
+dxssk.merchandise_lambda        1.115e+04  1.036e+04   1.076 0.285737    
+dxssk.spent                    -4.809e+02  3.482e+02  -1.381 0.171989    
+dxssk.playground_credits        2.252e+03  3.705e+03   0.608 0.545441    
+dxssk.tutoring_credits         -5.165e+01  2.427e+02  -0.213 0.832170    
+dxssk.coworking_credits        -2.013e+03  3.699e+03  -0.544 0.588064    
+dxssk.cafe_credits              6.899e+02  3.983e+02   1.732 0.088030 .  
+dxssk.party_credits             2.895e+02  3.492e+02   0.829 0.410176    
+dxssk.workshop_credits          1.361e+02  3.215e+02   0.423 0.673553    
+dxssk.camp_credits             -5.788e+02  3.191e+02  -1.814 0.074331 .  
+dxssk.merchandise_credits       1.458e+02  2.725e+02   0.535 0.594444    
+dxssk.savings                   3.192e+02  1.717e+03   0.186 0.853130    
+dxssk.r                        -1.286e+02  2.526e+02  -0.509 0.612318    
+dxssk.s                        -8.521e+01  1.395e+02  -0.611 0.543573    
+dxssk.u                         2.474e+02  2.313e+02   1.070 0.288784    
+dxssk.nm                        3.360e+02  2.145e+02   1.567 0.122061    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 449.8 on 65 degrees of freedom
+Multiple R-squared:  0.9921,	Adjusted R-squared:  0.9758 
+F-statistic: 60.79 on 134 and 65 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = dxsxbar.savings ~ metadata.target_market_size + 
+    metadata.r + metadata.s + metadata.u + metadata.nm + metadata.rationality + 
+    metadata.visit_change + metadata.mean_daily_visitors + metadata.playground + 
+    metadata.tutoring + metadata.coworking + metadata.cafe + 
+    metadata.party + metadata.workshop + metadata.camp + metadata.merchandise + 
+    metadata.r.membership_cost + metadata.r.playground_credits + 
+    metadata.r.tutoring_credits + metadata.r.cowowrking_credits + 
+    metadata.r.cafe_credits + metadata.r.party_credits + metadata.r.workshop_credits + 
+    metadata.r.camp_credits + metadata.r.merchandise_credits + 
+    metadata.s.membership_cost + metadata.s.playground_credits + 
+    metadata.s.tutoring_credits + metadata.s.cowowrking_credits + 
+    metadata.s.cafe_credits + metadata.s.party_credits + metadata.s.workshop_credits + 
+    metadata.s.camp_credits + metadata.s.merchandise_credits + 
+    metadata.u.membership_cost + metadata.u.playground_credits + 
+    metadata.u.tutoring_credits + metadata.u.cowowrking_credits + 
+    metadata.u.cafe_credits + metadata.u.party_credits + metadata.u.workshop_credits + 
+    metadata.u.camp_credits + metadata.u.merchandise_credits + 
+    dxsxbar.visit_prob + dxsxbar.visits + dxsxbar.playground_lambda + 
+    dxsxbar.tutoring_lambda + dxsxbar.coworking_lambda + dxsxbar.cafe_lambda + 
+    dxsxbar.party_lambda + dxsxbar.workshop_lambda + dxsxbar.camp_lambda + 
+    dxsxbar.merchandise_lambda + dxsxbar.spent + dxsxbar.playground_credits + 
+    dxsxbar.tutoring_credits + dxsxbar.coworking_credits + dxsxbar.cafe_credits + 
+    dxsxbar.party_credits + dxsxbar.workshop_credits + dxsxbar.camp_credits + 
+    dxsxbar.merchandise_credits + dxssd.visit_prob + dxssd.visits + 
+    dxssd.playground_lambda + dxssd.tutoring_lambda + dxssd.coworking_lambda + 
+    dxssd.cafe_lambda + dxssd.party_lambda + dxssd.workshop_lambda + 
+    dxssd.camp_lambda + dxssd.merchandise_lambda + dxssd.spent + 
+    dxssd.playground_credits + dxssd.tutoring_credits + dxssd.coworking_credits + 
+    dxssd.cafe_credits + dxssd.party_credits + dxssd.workshop_credits + 
+    dxssd.camp_credits + dxssd.merchandise_credits + dxssd.savings + 
+    dxssd.r + dxssd.s + dxssd.u + dxssd.nm + dxsk.visit_prob + 
+    dxsk.visits + dxsk.playground_lambda + dxsk.tutoring_lambda + 
+    dxsk.coworking_lambda + dxsk.cafe_lambda + dxsk.party_lambda + 
+    dxsk.workshop_lambda + dxsk.camp_lambda + dxsk.merchandise_lambda + 
+    dxsk.spent + dxsk.playground_credits + dxsk.tutoring_credits + 
+    dxsk.coworking_credits + dxsk.cafe_credits + dxsk.party_credits + 
+    dxsk.workshop_credits + dxsk.camp_credits + dxsk.merchandise_credits + 
+    dxsk.savings + dxsk.r + dxsk.s + dxsk.u + dxsk.nm + dxssk.visit_prob + 
+    dxssk.visits + dxssk.playground_lambda + dxssk.tutoring_lambda + 
+    dxssk.coworking_lambda + dxssk.cafe_lambda + dxssk.party_lambda + 
+    dxssk.workshop_lambda + dxssk.camp_lambda + dxssk.merchandise_lambda + 
+    dxssk.spent + dxssk.playground_credits + dxssk.tutoring_credits + 
+    dxssk.coworking_credits + dxssk.cafe_credits + dxssk.party_credits + 
+    dxssk.workshop_credits + dxssk.camp_credits + dxssk.merchandise_credits + 
+    dxssk.savings + dxssk.r + dxssk.s + dxssk.u + dxssk.nm, data = my_results_sims)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.3817 -1.1615 -0.0734  1.2453  4.3094 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -2.663e+02  1.452e+03  -0.183 0.855052    
+metadata.target_market_size    -4.981e-04  3.964e-04  -1.256 0.213440    
+metadata.r                      1.012e+00  1.465e+00   0.691 0.492000    
+metadata.s                     -2.666e+00  1.656e+00  -1.610 0.112141    
+metadata.u                      1.652e+00  1.444e+00   1.143 0.257056    
+metadata.nm                     1.190e+00  2.903e+00   0.410 0.683129    
+metadata.rationality           -2.172e-01  8.719e-01  -0.249 0.804098    
+metadata.visit_change          -2.565e+01  3.781e+01  -0.678 0.499906    
+metadata.mean_daily_visitors    1.856e-01  1.680e-01   1.105 0.273286    
+metadata.playground            -3.537e+00  3.749e-01  -9.434 8.57e-14 ***
+metadata.tutoring              -7.089e-01  8.552e-02  -8.290 8.93e-12 ***
+metadata.coworking             -3.422e+00  3.768e-01  -9.084 3.53e-13 ***
+metadata.cafe                  -6.348e-01  1.677e-01  -3.784 0.000339 ***
+metadata.party                  1.928e-03  3.696e-03   0.522 0.603637    
+metadata.workshop               9.566e-03  2.955e-02   0.324 0.747196    
+metadata.camp                   2.669e-03  2.910e-03   0.917 0.362475    
+metadata.merchandise            7.222e-03  2.729e-02   0.265 0.792121    
+metadata.r.membership_cost      4.395e-04  2.183e-04   2.013 0.048245 *  
+metadata.r.playground_credits  -2.008e-03  8.043e-03  -0.250 0.803685    
+metadata.r.tutoring_credits     3.445e-02  6.872e-02   0.501 0.617840    
+metadata.r.cowowrking_credits   4.134e-03  9.225e-03   0.448 0.655557    
+metadata.r.cafe_credits         5.460e-03  1.092e-02   0.500 0.618778    
+metadata.r.party_credits        5.196e-01  2.490e+00   0.209 0.835355    
+metadata.r.workshop_credits    -7.506e-01  8.402e-01  -0.893 0.374991    
+metadata.r.camp_credits         1.945e-01  6.188e-01   0.314 0.754233    
+metadata.r.merchandise_credits -1.214e+00  2.003e+00  -0.606 0.546544    
+metadata.s.membership_cost     -4.135e-04  1.961e-04  -2.108 0.038853 *  
+metadata.s.playground_credits   1.196e-02  6.591e-03   1.814 0.074257 .  
+metadata.s.tutoring_credits    -3.172e-02  1.168e-01  -0.271 0.786867    
+metadata.s.cowowrking_credits  -4.334e-02  3.017e-02  -1.437 0.155580    
+metadata.s.cafe_credits         3.067e-03  1.442e-02   0.213 0.832207    
+metadata.s.party_credits       -4.791e-01  1.132e+00  -0.423 0.673570    
+metadata.s.workshop_credits     6.967e-01  1.025e+00   0.680 0.498979    
+metadata.s.camp_credits        -1.237e-01  8.801e-01  -0.141 0.888649    
+metadata.s.merchandise_credits -5.088e-01  1.221e+00  -0.417 0.678320    
+metadata.u.membership_cost     -4.624e-04  5.290e-04  -0.874 0.385287    
+metadata.u.playground_credits  -1.014e-02  4.050e-02  -0.250 0.803083    
+metadata.u.tutoring_credits     2.557e-02  8.059e-02   0.317 0.752091    
+metadata.u.cowowrking_credits   2.462e-02  4.141e-02   0.594 0.554242    
+metadata.u.cafe_credits        -4.725e-02  2.874e-02  -1.644 0.105008    
+metadata.u.party_credits       -1.799e+00  1.142e+00  -1.576 0.119887    
+metadata.u.workshop_credits    -6.344e-02  1.024e+00  -0.062 0.950805    
+metadata.u.camp_credits         3.882e-01  5.379e-01   0.722 0.473085    
+metadata.u.merchandise_credits -3.364e-01  1.150e+00  -0.293 0.770713    
+dxsxbar.visit_prob              7.687e+01  2.824e+02   0.272 0.786306    
+dxsxbar.visits                  1.883e+02  2.920e+01   6.447 1.62e-08 ***
+dxsxbar.playground_lambda       2.210e+01  3.377e+01   0.654 0.515174    
+dxsxbar.tutoring_lambda        -2.268e+02  1.835e+02  -1.236 0.220930    
+dxsxbar.coworking_lambda        5.441e+01  3.257e+01   1.670 0.099635 .  
+dxsxbar.cafe_lambda            -1.326e+02  1.541e+02  -0.860 0.392864    
+dxsxbar.party_lambda            1.003e+05  1.424e+05   0.705 0.483582    
+dxsxbar.workshop_lambda        -7.830e+04  1.523e+05  -0.514 0.608962    
+dxsxbar.camp_lambda             2.606e+04  1.244e+05   0.209 0.834745    
+dxsxbar.merchandise_lambda      7.326e+04  1.275e+05   0.574 0.567673    
+dxsxbar.spent                  -2.752e-04  8.566e-04  -0.321 0.749009    
+dxsxbar.playground_credits     -6.594e-02  3.649e-02  -1.807 0.075402 .  
+dxsxbar.tutoring_credits        5.520e-02  4.505e-01   0.123 0.902873    
+dxsxbar.coworking_credits       4.405e-02  3.745e-02   1.176 0.243824    
+dxsxbar.cafe_credits            5.850e-02  4.702e-02   1.244 0.217849    
+dxsxbar.party_credits          -1.078e+01  8.705e+00  -1.238 0.220177    
+dxsxbar.workshop_credits       -2.440e+00  4.006e+00  -0.609 0.544662    
+dxsxbar.camp_credits           -1.643e+00  2.745e+00  -0.599 0.551478    
+dxsxbar.merchandise_credits     3.486e+00  5.573e+00   0.626 0.533790    
+dxssd.visit_prob                2.850e+02  6.451e+02   0.442 0.660075    
+dxssd.visits                   -2.393e+02  4.060e+01  -5.895 1.47e-07 ***
+dxssd.playground_lambda        -1.779e+01  7.621e+01  -0.233 0.816122    
+dxssd.tutoring_lambda          -3.419e+02  3.778e+02  -0.905 0.368803    
+dxssd.coworking_lambda          5.068e+01  7.983e+01   0.635 0.527721    
+dxssd.cafe_lambda              -4.759e+01  3.421e+02  -0.139 0.889788    
+dxssd.party_lambda             -5.360e+05  2.811e+05  -1.907 0.060932 .  
+dxssd.workshop_lambda           6.456e+05  2.763e+05   2.337 0.022543 *  
+dxssd.camp_lambda              -1.372e+05  2.870e+05  -0.478 0.634230    
+dxssd.merchandise_lambda        2.534e+05  2.545e+05   0.996 0.322953    
+dxssd.spent                    -9.401e-04  9.676e-04  -0.972 0.334881    
+dxssd.playground_credits        3.377e-02  3.472e-02   0.973 0.334396    
+dxssd.tutoring_credits         -1.570e-02  4.391e-01  -0.036 0.971587    
+dxssd.coworking_credits        -3.080e-02  4.120e-02  -0.748 0.457439    
+dxssd.cafe_credits             -4.217e-02  5.246e-02  -0.804 0.424419    
+dxssd.party_credits             9.447e+00  1.063e+01   0.889 0.377489    
+dxssd.workshop_credits          3.297e+00  4.115e+00   0.801 0.426003    
+dxssd.camp_credits              3.230e-01  2.884e+00   0.112 0.911170    
+dxssd.merchandise_credits       3.522e+00  7.818e+00   0.451 0.653813    
+dxssd.savings                   2.038e+00  1.278e-01  15.943  < 2e-16 ***
+dxssd.r                        -1.747e+01  1.542e+01  -1.133 0.261277    
+dxssd.s                        -3.084e+01  1.460e+01  -2.112 0.038558 *  
+dxssd.u                        -4.854e+00  1.472e+01  -0.330 0.742635    
+dxssd.nm                        6.775e+00  9.445e+00   0.717 0.475749    
+dxsk.visit_prob                 3.049e+01  5.790e+01   0.527 0.600269    
+dxsk.visits                    -7.465e+00  2.787e+00  -2.678 0.009369 ** 
+dxsk.playground_lambda          2.570e+01  7.684e+01   0.334 0.739097    
+dxsk.tutoring_lambda           -3.568e+01  7.822e+01  -0.456 0.649800    
+dxsk.coworking_lambda           1.871e+01  9.042e+01   0.207 0.836747    
+dxsk.cafe_lambda               -3.672e+01  8.022e+01  -0.458 0.648670    
+dxsk.party_lambda              -1.528e+02  9.039e+01  -1.691 0.095715 .  
+dxsk.workshop_lambda            1.858e+02  9.144e+01   2.032 0.046201 *  
+dxsk.camp_lambda               -1.138e+02  1.004e+02  -1.133 0.261234    
+dxsk.merchandise_lambda         6.474e+01  7.370e+01   0.878 0.382993    
+dxsk.spent                      3.042e-01  2.961e-01   1.027 0.308109    
+dxsk.playground_credits        -1.651e+00  2.914e+00  -0.566 0.573016    
+dxsk.tutoring_credits          -1.551e-01  1.062e-01  -1.461 0.148858    
+dxsk.coworking_credits          1.889e+00  2.862e+00   0.660 0.511553    
+dxsk.cafe_credits              -9.380e-02  4.984e-01  -0.188 0.851308    
+dxsk.party_credits              8.090e-01  3.892e-01   2.079 0.041610 *  
+dxsk.workshop_credits          -9.879e-02  2.329e-01  -0.424 0.672884    
+dxsk.camp_credits               1.547e-01  2.885e-01   0.536 0.593593    
+dxsk.merchandise_credits       -3.529e-01  2.809e-01  -1.256 0.213526    
+dxsk.savings                    4.690e+00  9.717e-01   4.827 8.76e-06 ***
+dxsk.r                         -1.525e+00  8.021e-01  -1.901 0.061677 .  
+dxsk.s                          3.686e-04  5.811e-01   0.001 0.999496    
+dxsk.u                         -1.205e-01  8.655e-01  -0.139 0.889672    
+dxsk.nm                        -6.664e-02  2.974e-01  -0.224 0.823407    
+dxssk.visit_prob                2.179e+01  5.655e+01   0.385 0.701288    
+dxssk.visits                    8.636e+01  1.978e+01   4.367 4.62e-05 ***
+dxssk.playground_lambda         1.073e+02  7.392e+01   1.451 0.151457    
+dxssk.tutoring_lambda          -9.672e+01  7.418e+01  -1.304 0.196893    
+dxssk.coworking_lambda          8.295e+01  6.769e+01   1.225 0.224857    
+dxssk.cafe_lambda              -8.583e+01  6.467e+01  -1.327 0.189123    
+dxssk.party_lambda              3.400e+01  7.084e+01   0.480 0.632930    
+dxssk.workshop_lambda          -1.656e+01  8.106e+01  -0.204 0.838731    
+dxssk.camp_lambda              -3.474e+01  7.383e+01  -0.470 0.639581    
+dxssk.merchandise_lambda        6.125e+01  7.182e+01   0.853 0.396879    
+dxssk.spent                    -5.959e+00  2.327e+00  -2.561 0.012781 *  
+dxssk.playground_credits        2.330e+01  2.552e+01   0.913 0.364452    
+dxssk.tutoring_credits          1.876e+00  1.662e+00   1.129 0.263223    
+dxssk.coworking_credits        -2.293e+01  2.546e+01  -0.901 0.371172    
+dxssk.cafe_credits              1.348e-01  2.816e+00   0.048 0.961961    
+dxssk.party_credits            -4.776e+00  2.353e+00  -2.030 0.046505 *  
+dxssk.workshop_credits          1.753e+00  2.214e+00   0.791 0.431550    
+dxssk.camp_credits             -1.137e+00  2.256e+00  -0.504 0.616139    
+dxssk.merchandise_credits       2.989e+00  1.851e+00   1.615 0.111135    
+dxssk.savings                  -5.797e+01  9.449e+00  -6.135 5.66e-08 ***
+dxssk.r                        -3.125e+00  1.706e+00  -1.832 0.071525 .  
+dxssk.s                         2.300e+00  9.242e-01   2.489 0.015391 *  
+dxssk.u                         2.693e+00  1.577e+00   1.708 0.092501 .  
+dxssk.nm                        1.327e+00  1.501e+00   0.884 0.379773    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.109 on 65 degrees of freedom
+Multiple R-squared:  0.9978,	Adjusted R-squared:  0.9933 
+F-statistic: 222.1 on 134 and 65 DF,  p-value: < 2.2e-16
+
