@@ -1,26 +1,31 @@
 # RDWP-Simulation
 I wrote this: My agent-type simulation of my business, used for setting prices based on a diverse customer base
 
-I wrote preceeding sentence. AI wrote the rest.
+I wrote preceeding sentence. AI wrote the rest, and it's maybe 60-85% accurate.
 
-This repository contains a simple simulation model built to support planning and decision-making for Rainy Day Work & Play (RDWP), a mixed-use indoor space offering coworking, tutoring, and play areas for families.
+# RDWP Operational Simulation
 
-The simulation models customer flow, space utilization, and staffing under different usage scenarios (e.g., weekday mornings, rainy weekends, summer camps). It helps explore capacity limits, bottlenecks, and revenue estimates.
+This repository contains a stochastic simulation model designed to support planning and pricing decisions for Rainy Day Work & Play (RDWP), a mixed-use indoor space offering coworking, tutoring, and play areas for families.
+
+The model simulates aggregate customer usage across time, space, and service areas under different demand and scheduling assumptions. It provides evidence to support pricing and operational decision-making.
 
 ## What's Included
 
-- `rdwp_simulation.R` — core simulation script
-- `scenarios/` — pre-built usage scenarios
-- `outputs/` — example visualizations and summaries
-- `README.md` — this file
+- `my_sim_script.R` — main script to run the simulation
+- Other `.R` files — support functions and parameter definitions
 
-## Goals
+## How to Run
 
-- Support planning decisions about staffing, pricing, and layout
-- Identify high-demand time slots and resource constraints
-- Inform investment decisions with data
+1. Clone the repo.
+2. Open R and source all scripts.
+3. Run `my_sim_script.R` to generate simulation output.
+
+## Purpose
+
+- Explore impacts of pricing and scheduling strategies
+- Support decision-making with probabilistic evidence
+- Stress-test operational assumptions for launch scenarios
 
 ---
 
-If you're building something similar or want to collaborate, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile).
-
+If you’re working on something similar or have questions, feel free to connect on [LinkedIn](https://www.linkedin.com/in/your-profile).
