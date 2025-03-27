@@ -1,7 +1,5 @@
 # RDWP-Simulation
-I wrote this: My agent-type simulation of my business, used for setting prices based on a diverse customer base
-
-I wrote preceeding sentence. AI wrote the rest, and it's maybe 60-85% accurate.
+My agent-type simulation of my business, used for setting prices based on a diverse customer base
 
 # RDWP Operational Simulation
 
